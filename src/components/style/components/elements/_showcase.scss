@@ -1,0 +1,114 @@
+._showcase {
+    height: calc(100vh - 126.78px);
+    width: 100%;
+
+    ._container {
+        height: 100%;
+    }
+
+    ._content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0 0.75rem;
+
+        ._showcase_background {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 70%;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        ._showcase_image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            padding: 0 0.75rem;
+
+            ._context_img {
+                height: 90%;
+                width: 100%;
+                padding-right: 10%;
+
+                img {
+                    pointer-events: none;
+                    height: 85%;
+                    max-width: 55%;
+                    max-height: 85%;
+                    width: 55%;
+                    min-height: 85%;
+                    min-width: 55%;
+                    box-shadow: 2px 2px 5px #ccc;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        ._showcase_context {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+
+            ._context {
+                padding: 0 0.75rem;
+
+                ._sub_heading {
+                    margin-bottom: 0.75rem;
+                    color: $showcase_sub_heading_clor;
+                }
+
+                ._heading {
+                    font-size: 75px;
+                    margin-bottom: 1.75rem;
+                    color: $showcase_heading_clor;
+
+                    ._investment {
+                        color: $showcase_heading_clor_1;
+                    }
+                }
+
+                ._lead {
+                    font-size: 18px;
+                    margin-bottom: 2rem;
+                    color: $showcase_lead_clor;
+                }
+
+                ._get_qu_form {
+
+                    ._input_group {
+                        background-color: #fff;
+                        box-shadow: 2px 2px 4px #ccc;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        max-width: 550px;
+
+                        ._form_control {
+                            padding: 0.75rem 1.5rem;
+                            font-size: 17px;
+                            border: none;
+                            background-color: transparent;
+                        }
+
+                        ._get_qu_form_btn {
+                            padding: 0 36px;
+                            height: 44px;
+                            border-radius: 30px;
+                            border: none;
+                            background-color: $showcase_get_qu_bg;
+                            color: $showcase_get_qu_clor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

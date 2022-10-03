@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::before, &::after {
+        box-sizing: border-box;
+    }
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+._container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+._content {
+    padding: $base_padding_lft_rgt;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+._text_normal {
+    font-weight: normal;
+}
+
+._text_bold {
+    font-weight: bold;
+}
+
+._text_upcs {
+    text-transform: uppercase;
+}
+
+._pre_wrap {
+    white-space: pre-wrap;
+}
+
+._select_non {
+    user-select: none;
+}
+
+._outl_non {
+    outline: none;
+}
+
+
+
+// >> FLEX =============>
+
+._flx {
+    display: flex;
+
+    &_1 {
+        flex: 1;
+    }
+
+    // >> DIRECTION ===========>
+
+    &_dir {
+
+        &_cl {
+            flex-direction: column;
+        }
+
+        &_cl_rev {
+            flex-direction: column-reverse;
+        }
+    }
+
+    // >> ALIGN ITEM
+
+    &_al {
+
+        &_st {
+            align-items: flex-start;
+        }
+
+        &_ce {
+            align-items: center;
+        }
+
+        &_en {
+            align-items: flex-end;
+        }
+
+        &_bls {
+            align-items: baseline;
+        }
+
+        &_str {
+            align-items: stretch;
+        }
+    }
+
+    // >> JUSTIFY CONTENT
+
+    &_ju {
+
+        &_def_st {
+            justify-content: start;
+        }
+
+        &_st {
+            justify-content: flex-start;
+        }
+
+        &_ce {
+            justify-content: center;
+        }
+
+        &_en {
+            justify-content: flex-end;
+        }
+
+        &_fbsl {
+            justify-content: first baseline;
+        }
+
+        &_bsl {
+            justify-content: baseline;
+        }
+
+        &_lbsl {
+            justify-content: last baseline;
+        }
+        
+        &_spar {
+            justify-content: space-around;
+        }
+
+        &_spbt {
+            justify-content: space-between;
+        }
+
+        &_spev {
+            justify-content: space-evenly;
+        }
+
+        &_lft {
+            justify-content: left;
+        }
+
+        &_rgt {
+            justify-content: right;
+        }
+    }
+}

@@ -1,0 +1,597 @@
+// >> about us
+
+._about_us {
+    background-color: $about_us_bg;
+
+    ._content {
+        position: relative;
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+    }
+
+    ._section_name_and_heading {
+
+        ._section_name {
+            margin-bottom: 0.75rem;
+            color: $about_section_name_clor;
+        }
+
+        ._heading {
+            font-size: 65px;
+            color: $about_section_heading_clor;
+        }
+
+    }
+
+    ._section_lead_and_number {
+
+        ._lead {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 1.75rem;
+            color: $about_section_lead_clor;
+
+            &_part {
+                margin-bottom: 0.75rem;
+            }
+        }
+
+        ._num_and_num_heading {
+
+            ._num_heading {
+                font-size: 15px;
+                margin-bottom: 0.5rem;
+                color: $about_section_num_heading_clor;
+            }
+
+            ._num {
+                font-size: 32px;
+                color: $about_section_num_clor;
+            }
+        }
+    }
+
+    ._business_inside {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        ._business_inside_button {
+            display: inline-block;
+            min-width: 350px;
+            padding: 2rem;
+            background-color: $about_section_business_inside_bg;
+            color: $default_color_wh;
+            font-size: 20px;
+
+            ._play_button_circle {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: $about_section_play_btn_cirlce_bg;
+                font-size: 20px;
+            }
+
+        }
+    }
+
+}
+
+
+// >> service 
+._services {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 40%;
+        background-color: rgba(204, 204, 204, 0.089);
+        z-index: -1;
+    }
+
+    ._content {
+        padding: 6rem 0;
+        z-index: 1111;
+
+
+        ._services_card {
+            box-shadow: 2px 5px 20px rgba(204, 204, 204, 0.247);
+            width: 80%;
+            background-color: #fff;
+
+            ._services_card_content {
+                padding: 4.5rem;
+
+                ._card_grid_items {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 5rem;
+
+                    ._card_grid_item {
+
+
+                        ._card_service_icon_and_num {
+                            margin-right: 1.75rem;
+
+                            ._icon {
+                                margin-bottom: 1.5rem;
+                            }
+                        }
+
+                        ._card_context {
+
+                            ._card_context_heading {
+                                font-size: 25px;
+                                margin-bottom: 0.5rem;
+                                color: $services_section_heading_clor;
+                            }
+
+                            ._card_context_lead {
+                                width: 90%;
+                                line-height: 1.5;
+                                color: $services_section_lead_clor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+// >> Counter
+._counter {
+
+    ._counter_bar {
+        background-color: $counter_bar_bg;
+
+        ._counter_bar_item {
+            padding: 2.75rem 0;
+
+            ._item_icon {
+                img {
+                    vertical-align: middle;
+                }
+            }
+
+            ._counter_number_and_text {
+                    margin-left: 0.75rem;
+                ._number {
+                    margin-bottom: 0.5rem;
+                    color: $counter_bar_number_color;
+
+                    ._number_length {
+                        font-size: 50px;
+                        line-height: 0.8;
+                    }
+
+                }
+
+                ._text {
+                    font-size: 14px;
+                    color: $counter_bar_text_color;
+                }
+            }
+        }
+    }
+}
+
+
+// >> Features
+._features {
+    padding: 8rem 0;
+
+
+    ._features_sub_heading {
+        font-size: 14px;
+        margin-bottom: .75rem;
+        text-align: center;
+        color: $features_sub_heading_color;
+    }
+
+    ._features_heading {
+        font-size: 55px;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: $features_heading_color;
+    }
+
+    ._features_grids {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem;
+
+        ._features_grid_item {
+
+            ._features_img {
+                height: 250px;
+                background-color: rgba(206, 206, 206, 0.219);
+                margin-bottom: 0.75rem;
+            }
+
+            ._feature_grid_item_context {
+
+                ._sub_heading {
+                    font-size: 14px;
+                    color: $features_grid_sub_heading;
+                    margin-bottom: 0.5rem;
+                }
+
+                ._heading {
+                    font-size: 32px;
+                    margin-bottom: 0.75rem;
+                    color: $features_grid_heading;
+                }
+
+                ._heading_bottom_line {
+                    height: 1px;
+                    width: 100%;
+                    background-color: #ddd;
+                }
+
+                ._lead {
+                    color: $features_grid_lead_color;
+                    margin-top: 1.2rem;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+
+
+
+// >> get support
+._get_support {
+    padding: 8rem 0;
+    background: linear-gradient(to right, #333, #b1b1b1);
+
+    ._get_support_sub_heading {
+        font-size: 15px;
+        margin-bottom: 0.75rem;
+        color: $get_support_sub_heading_color;
+    }
+
+    ._get_support_heading {
+        font-size: 60px;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        color: $get_support_heading;
+    }
+
+    ._number {
+        color: $get_support_number_color;
+        font-size: 62px;
+        margin-bottom: 2rem;
+    }
+
+    ._get_appointment {
+        display: inline-block;
+        font-size: 15px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 36px;
+        box-shadow: 0 0 0 0.1rem $get_support_button_color;
+        border-radius: 40px;
+        color: $get_support_button_color;
+        cursor: pointer;
+    }
+}
+
+
+// >> team
+._team {
+    padding: 6rem 0;
+
+    ._team_section_sub_heading {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 0.75rem;
+        color: $team_member_section_sub_heading_color;
+    }
+
+    ._team_section_heading {
+        font-size: 60px;
+        margin-bottom: 2.75rem;
+        text-align: center;
+        color: $team_member_section_heading_color;
+    }
+
+    ._team_members {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2rem;
+
+        ._team_member {
+
+            ._team_member_img {
+                height: 300px;
+                background-color: #f0f0f0;
+                margin-bottom: 0.5rem;
+
+                img {
+                    vertical-align: middle;
+                }
+            }
+
+            ._social {
+                position: relative;
+
+                ._social_media_link {
+                    position: absolute;
+                    right: 10px;
+                    top: 0;
+
+                    ._show_button {
+                        position: relative;
+                        top: -30px;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        box-shadow: 0px 0px 5px #ccc;
+                        color: #868686;
+                        cursor: pointer;
+                    }
+
+                    ._links {
+                        position: absolute;
+                        top: -215px;
+                        
+                        ._link_button {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                            font-size: 18px;
+                            color: rgb(172, 172, 172);
+                            background-color: #fff;
+                            box-shadow: 0 0 5px #ccc;
+                            &:not(:last-child) {
+                                margin-bottom: 0.75rem;
+                            }
+
+                            &:nth-child(2) {
+                                background-color: $social_twitter_bg;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            ._team_member_context {
+                padding: 0.85rem 0;
+                
+                ._team_member_work_name {
+                    font-size: 14px;
+                    color: $team_member_work_name_color;
+                    margin-bottom: 0.5rem;
+                }
+
+                ._team_member_heading {
+                    color: $team_member_heading_color;
+                    margin-bottom: 1rem;
+                }
+
+                ._team_member_heading_bottom_line {
+                    height: 1px;
+                    width: 100%;
+                    background-color: #f0f0f0;
+                }
+
+                ._team_member_lead {
+                    margin-top: 1rem;
+                    line-height: 1.5;
+                    color: $team_member_lead_color;
+                }
+            }
+        }
+    }
+}
+
+
+// >> clients
+._clients {
+    padding: 2.5rem 0;
+    background-color: $client_bg;
+
+    ._clients_links {
+
+        ._client {
+
+            a {
+                ._client_logo {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+}
+
+
+// >> why chooes
+._why_choose {
+    position: relative;
+    padding: 6rem 0;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        background-color: $why_choose_before_bg;
+        z-index: -1;
+    }
+    
+
+    ._why_choose_card {
+
+        ._why_choose_card_content {
+            padding: 1.5rem;
+
+            ._card_img {
+                background-color: #ccc;
+                flex: 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    vertical-align: middle;
+                }
+            }
+
+            ._card_context {
+                margin-left: 2.5rem;
+                flex: 1.6;
+
+                ._card_context_sub_heading {
+                    font-size: 14px;
+                    margin-bottom: 0.4rem;
+                    color: $why_choose_card_sub_heading_color;
+                }
+
+                ._card_context_heading {
+                    font-size: 60px;
+                    margin-bottom: 2rem;
+                    color: $why_choose_card_heading_color;
+                }
+
+                ._choose_case {
+                    
+                    ._case {
+                        &:not(:last-child) {
+                            margin-bottom: 1.75rem;
+                        }
+
+                        ._case_icon {
+                            height: 60px;
+                            width: 60px;
+                            padding: 1rem;
+                            border-radius: 50%;
+                            box-shadow: 0 0 0 4px rgb(235, 235, 235);
+
+                            img {
+                                vertical-align: middle;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        ._case_context {
+                            margin-left: 1.5rem;
+
+                            ._case_heading {
+                                margin-bottom: 0.75rem;
+                                color: $why_choose_case_heading_color;
+                            }
+
+                            ._case_lead {
+                                font-size: 15px;
+                                width: 60%;
+                                line-height: 1.6;
+                                color: $why_choose_case_lead_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// >> news Letter
+._newsletter {
+
+    ._newsletter_card {
+        flex-basis: 90%;
+        background-color: $news_latter_card_bg;
+        margin-bottom: 6rem;        
+
+        ._newsletter_context {
+            position: relative;
+            flex: 1.2;
+            padding: 4.5rem;
+            background-color: $news_latter_card_context_bg;
+
+            ._back_ground_image {
+                position: absolute;
+                right: 60px;
+                top: 40px;
+                transform: rotate(-10deg);
+            }
+
+            ._context_content {
+                position: relative;
+                z-index: 1;
+
+                ._newsletter_sub_heading {
+                    font-size: 14px;
+                    margin-bottom: 0.75rem;
+                    color: $news_latter_sub_heading_color;
+                }
+    
+                ._newsletter_heading {
+                    font-size: 55px;
+                    margin-bottom: 1.75rem;
+                    color: $news_latter_heading_color;
+                }
+
+                ._subscribe_form {
+
+                    ._input_group {
+                        width: 80%;
+                        height: 42px;
+                        border-radius: 30px;
+                        background-color: $newslater_input_bg;
+
+                        ._form_control {
+                            flex: 1;
+                            border: none;
+                            height: 42px;
+                            padding: 0 20px;
+                            border-radius: 30px 0 0 30px;
+                            background-color: transparent;
+                            color: #fff;
+                        }
+
+                        ._button {
+                            height: 42px;
+                            line-height: 42px;
+                            font-size: 12px;
+                            padding: 0 36px;
+                            border: none;
+                            border-radius: 30px;
+                            background-color: $newslater_button_bg;
+                            color: $newslater_button_color;
+
+                            i {
+                                font-size: 16px;
+                            }
+                            
+                            span {
+                                margin-left: 0.5rem;
+                            }
+                        }                        
+                    }
+                }
+            }
+        }
+
+        ._newsletter_blank {
+            flex: 1;
+        }
+    }
+
+}

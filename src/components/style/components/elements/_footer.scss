@@ -1,0 +1,114 @@
+._footer {
+    background-color: $footer_bg;
+
+    ._footer_context {
+       padding: 5rem 0;
+
+        ._grid_items {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            grid-gap: 3rem;
+
+            ._grid_item {
+
+                ._brand_logo {
+                    margin-bottom: 1rem;
+                }
+
+                ._lead {
+                    margin-bottom: 2rem;
+                    line-height: 1.6;
+                    color: $footer_lead_color;
+                }
+
+                ._free_call {
+
+                    ._free_call_icon {
+                        img {
+                            vertical-align: middle;
+                        }
+                    }
+
+                    ._call_num_text {
+                        margin-left: 0.75rem;
+                        
+                        ._num {
+                            font-size: 28px;
+                            color: $footer_number_color;
+                        }
+                        ._text {
+                            font-size: 14px;
+                            color: $footer_number_text_color;
+                        }
+                    }
+                }
+
+                ._heading {
+                    margin-bottom: 1.75rem;
+                    color: $footer_heading_color;
+                }
+
+                ._footer_link_items {
+                    ._footer_link_item {
+                        margin-bottom: 1.5rem;
+
+                        a {
+                            color: $footer_link_color;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                ._address {
+
+                    ._address_item {
+                        margin-bottom: 2rem;
+
+                        ._icon {
+                            padding: 0.2rem 0;
+                            img {
+                                vertical-align: middle;
+                            }
+                        }
+
+                        ._address_text, ._email_link {
+                            line-height: 1.6;
+                            margin-left: 1.75rem;
+                            color: $footer_address_color;
+                        }
+
+                        ._email_link {
+                            color: $footer_link_color;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ._footer_copy {
+        padding: 1.5rem 0;
+        background-color: $footer_copy_bg;
+
+        ._copy_text {
+            color: $footer_copy_color;
+        }
+
+        ._link {
+            ._gray {
+                display: inline-block;
+                color: gray;
+                padding: 0 0.75rem;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

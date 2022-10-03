@@ -1,0 +1,66 @@
+._nav_contact {
+    height: 40px;
+    background-color: $nav_contact_bg;
+
+    ._content {
+        height: 40px;
+
+        ._lang_and_contact_details {
+            ._lang {
+                margin-right: 1rem;
+
+                #_selsect_lang {
+                    color: #fafafa;
+                    background-color: transparent;
+                    border: none;
+
+                    option {
+                        color: #333;
+                    }
+                }
+            }
+
+            ._contact_email {
+                ._email {
+                    height: 22px;
+                    line-height: 22px;
+                    color: #fafafa;
+
+                    ._icon {
+                        margin-right: 0.5rem;
+                        font-size: 22px;
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+
+        ._socail_and_get_qu {
+            ._social {
+                ul {
+                    li {
+                        padding: 0 0.3rem;
+                    }
+                }
+                ._icon {
+                    font-size: 21px;
+                    color: #fafafa;
+                }
+            }
+
+            ._get_qu {
+                margin-left: 1rem;
+
+                ._get_qu_btn {
+                    display: inline-block;
+                    line-height: 40px;
+                    background-color: $get_qu_bg;
+                    color: $get_qu_color;
+                    padding: 0 28px;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
